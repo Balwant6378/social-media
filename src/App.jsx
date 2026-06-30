@@ -12,16 +12,19 @@ import { PostList } from "./components/PostList";
 import PostListProvider from "./store/post-list-store";
 
 function App() {
-  const [selectedTab, setSelectedTab] = useState();
+  const [selectedTab, setSelectedTab] = useState("Home");
   return (
     <PostListProvider>
       <div className="app-container">
-        <Sidebar
-          selectedTab={selectedTab}
-          setSelectedTab={setSelectedTab}
-        ></Sidebar>
+        {/* <Sidebar
+        // selectedTab={selectedTab}
+        // setSelectedTab={setSelectedTab}
+        ></Sidebar> */}
         <div className="content">
-          <Header></Header>
+          <Header
+            selectedTab={selectedTab}
+            setSelectedTab={setSelectedTab}
+          ></Header>
           {selectedTab === "Home" ? (
             <PostList></PostList>
           ) : (

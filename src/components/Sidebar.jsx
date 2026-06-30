@@ -26,14 +26,14 @@ export const Sidebar = ({ selectedTab, setSelectedTab }) => {
           {" "}
           <li
             className="nav-item"
-            onClick={() => {
-              setSelectedTab("Home");
-            }}
+            // onClick={() => {
+            //   setSelectedTab("Home");
+            // }}
           >
             {" "}
             <a
               href="#"
-              className={`nav-link text-white ${selectedTab === "Home" && "active"}`}
+              // className={`nav-link text-white ${selectedTab === "Home" && "active"}`}
               aria-current="page"
             >
               {" "}
@@ -49,14 +49,14 @@ export const Sidebar = ({ selectedTab, setSelectedTab }) => {
             </a>{" "}
           </li>{" "}
           <li
-            onClick={() => {
-              setSelectedTab("Create Post");
-            }}
+          // onClick={() => {
+          //   setSelectedTab("Create Post");
+          // }}
           >
             {" "}
             <a
               href="#"
-              className={`nav-link text-white ${selectedTab === "Create Post" && "active"}`}
+              // className={`nav-link text-white ${selectedTab === "Create Post" && "active"}`}
             >
               {" "}
               <svg
